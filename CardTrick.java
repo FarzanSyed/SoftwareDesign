@@ -19,6 +19,10 @@ public class CardTrick {
     }
 
     public static void main(String[] args) {
+	    
+	    Card [] luckyCard = new Card();
+	    luckyCard = "Hearts", 8;
+	    
 	    Scanner s = new Scanner(System.in);
         Card[] magicHand = new Card[7];
 	   Card c = new Card();//Farzan
