@@ -22,6 +22,9 @@ public class CardTrick {
 	    Scanner s = new Scanner(System.in);
         Card[] magicHand = new Card[7];
 	   Card c = new Card();//Farzan
+	    Card luckyCard = new Card();
+	    luckyCard.setSuit("Hearts");
+	    luckyCard.setValue(10);
 		
         for (int i = 0; i < magicHand.length; i++) {
             c.setValue(new Random().nextInt(magicHand.length));
