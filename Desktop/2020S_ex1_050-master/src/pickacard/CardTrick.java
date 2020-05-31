@@ -22,27 +22,29 @@ public class CardTrick {
 	    Scanner s = new Scanner(System.in);
         Card[] magicHand = new Card[7];
 	   Card c = new Card();//Farzan
+
 	    Card luckyCard = new Card();
 	    luckyCard.setSuit("Hearts");
 	    luckyCard.setValue(10);
+
 		
         for (int i = 0; i < magicHand.length; i++) {
             c.setValue(new Random().nextInt(magicHand.length));
 		   c.setSuit(Card.SUITS[pickSuit()]);
 		   magicHand[i]=c;
 		   
-		   System.out.println("Pick a suit:");
+		  // System.out.println("Pick a suit:");
 
-			String userCard = s.next();
-			System.out.println("Pick a number:");
+			//String userCard = s.next();
+			//System.out.println("Pick a number:");
 
-	String userCardNo = s.next();
-		int No = Integer.parseInt(userCardNo);
-			
+//	String userCardNo = s.next();
+		//int No = Integer.parseInt(userCardNo);
+		int luckyCardNo 	= 10;
 boolean found = false;
         for (int z = 0; z < magicHand.length; z++) {
-             if (No == magicHand[z].getValue()) {
-                if (userCard.equalsIgnoreCase(magicHand[z].getSuit())) {
+             if (luckyCardNo == magicHand[z].getValue()) {
+                if (luckyCard.equals(magicHand[z].getSuit())) {
                     found = true;
 			
                 } 
